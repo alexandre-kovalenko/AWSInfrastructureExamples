@@ -141,5 +141,5 @@ ${AWS} s3 cp index.html s3://${BUCKET_NAME}/ || die "Could not add test object"
 ${AWS} s3 cp FantomLiberty.png s3://${BUCKET_NAME}/ || die "Could not add test object"
 #
 echo You can check the status of the distribution with: ${AWS} cloudfront get-distribution --id ${DIST_ID} and look for the status "Deployed"
-echo You can access the distribution with: https://${DIST_DOMAIN}.cloudfront.net/
+echo You can access the distribution with: https://${DIST_DOMAIN}
 
